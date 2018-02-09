@@ -12,16 +12,16 @@
     </div>
   </div>
 
-  <div class="banner alpha">
+  <div class="banner beta">
     <div class="page-section">
-      <span>ALPHA</span> This service is not live. It is being tested.
+      <span>BETA</span> This is a new service - your <a href="/{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}/app/08-survey">feedback</a> will help this service.
     </div>
   </div>
 
   <header role="banner">
     <div class="global-header">
       <div class="global-header__inner">
-        <a href="#" class="global-header__link">
+        <a href="/{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}/01-overview" class="global-header__link">
             <img src="/images/logotype-nhs-mono.png" alt="NHS">
           </a>
       </div>

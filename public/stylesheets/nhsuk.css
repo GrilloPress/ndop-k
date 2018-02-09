@@ -3650,7 +3650,6 @@ input[type=range]:focus::-ms-fill-upper {
     margin-top: 8px; }
 
 .banner {
-  background-color: #f9b905;
   color: #000;
   font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
@@ -3667,16 +3666,25 @@ input[type=range]:focus::-ms-fill-upper {
     .banner {
       font-size: 16px;
       line-height: 24px; } }
-  .banner.alpha span {
-    padding: 1px 5px;
-    color: #f9b905;
-    background-color: #000; }
+  .banner.alpha {
+    background-color: #f9b905; }
+    .banner.alpha span {
+      padding: 1px 5px;
+      color: #f9b905;
+      background-color: #000; }
+  .banner.beta {
+    background-color: #ebf5ff; }
+    .banner.beta span {
+      padding: 1px 5px;
+      color: #231f20;
+      background-color: white;
+      border: 1px solid #005eb8; }
   .banner a {
     color: black;
-    text-decoration: underline; }
+    text-decoration: underline;
+    padding: 1px; }
     .banner a:hover {
       color: #f9b905;
-      padding: 1px 5px;
       background-color: #000; }
   .banner .page-section {
     padding: 8px 0; }
