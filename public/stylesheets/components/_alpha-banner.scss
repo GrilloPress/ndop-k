@@ -1,0 +1,41 @@
+.banner {
+
+  background-color: #f9b905;
+  color: #000;
+  @include core-font(16);
+  font-weight: 400;
+  border-bottom: 2px dashed;
+
+  &.alpha {
+
+    span {
+
+      padding: 1px 5px;
+      color: #f9b905;
+      background-color: #000;
+
+    }
+
+  }
+
+  a {
+
+    color: black;
+    text-decoration: underline;
+
+    &:hover {
+
+      color: #f9b905;
+      padding: 1px 5px;
+      background-color: #000;
+
+    }
+  }
+
+  .page-section {
+
+    padding: 8px 0;
+
+  }
+
+}

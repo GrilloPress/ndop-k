@@ -1,0 +1,141 @@
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+@import "../units/heading";
+@import "../units/paragraph";
+
+.callout {
+  @include element-padding;
+  background-color: $white;
+
+  &:focus {
+    outline: 3px solid $focus-colour;
+  }
+}
+
+.callout--interruption {
+
+  -webkit-box-shadow: 0px 0px 14px 3px #ebebeb;
+  -moz-box-shadow: 0px 0px 14px 3px #ebebeb;
+  box-shadow: 0px 0px 14px 3px #ebebeb;
+  border: 1px solid #cbd6d8;
+  border-radius: 5px;
+
+  h1 {
+
+    @include bold-font(36);
+  }
+
+  h2 {
+
+    @include bold-font(24);
+  }
+
+  .column--number-counter {
+
+    width: 8%;
+    float: left;
+  }
+
+  .number-circle {
+
+    padding: 2px 12px;
+    background-color: $blue;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+    display: inline-block;
+    text-align: center;
+
+    @include media(mobile) {
+      margin: 16px 0;
+    }
+  }
+
+  .link-list {
+
+    li {
+
+      margin-bottom: 16px;
+      @include core-font(20);
+    }
+
+    &.no-margin {
+
+      margin: 0;
+
+      li {
+
+        margin: 0;
+      }
+    }
+
+    &.no-margin-li {
+
+      margin: 1em 0;
+
+      li {
+
+        margin: 0;
+      }
+    }
+  }
+
+  &.alt {
+
+    background-color: #003087;
+    color: white;
+
+    .number-circle {
+
+      color: $black;
+      background-color: white;
+      border: 1px solid;
+    }
+  }
+}
+
+.callout--muted {
+  background-color: $grey-4;
+}
+
+.callout--info {
+  background-color: $grey-5;
+  border: solid $grey-2;
+  border-width: 0 0 0 $baseline-grid-unit;
+}
+
+.callout--attention {
+  border: $baseline-grid-unit * 2 solid $bright-blue;
+}
+
+.callout--warning {
+  background-color: $yellow-10;
+  border: solid $yellow-50;
+  border-width: $baseline-grid-unit 0;
+}
+
+.callout--alert {
+  background-color: $red-10;
+  border-top: $baseline-grid-unit * 2 solid $red;
+}
+
+.callout--severe {
+  background-color: $red;
+  color: $white;
+
+  a {
+    @include link-reverse-polarity;
+  }
+}
+
+.callout--error {
+  border: $baseline-grid-unit solid $red;
+}
+
+.callout--compact {
+  display: inline-block;
+
+  @include media(desktop) {
+    padding: $baseline-grid-unit * 4 $baseline-grid-unit * 6;
+  }
+}

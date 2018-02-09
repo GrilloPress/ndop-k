@@ -1,0 +1,217 @@
+// Checkbox
+
+.multiple-choice--checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    @include bold-font(20);
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    // display: inline-block;
+    vertical-align: middle;
+    width: 34px;
+    height: 34px;
+    background: white;
+    border: 3px solid $blue;
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 5px $yellow;
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: white;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: $grey-2;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: $grey-3;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: "";
+    border: solid;
+    border-width: 0 0 5px 5px;
+    background: transparent;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    zoom: 1;
+    filter: alpha(opacity=0);
+  }
+}
+
+.checkbox-blue + label:before {
+
+  display: inline-block;
+
+}
+
+// Hack to give the checkbox space below it and the looooooong checkbox text a container so as not to flow around it
+
+.checkbox-container {
+
+  @include media(tablet) {
+
+    min-height: 80px;
+  }
+
+  @include media(desktop) {
+
+    min-height: 100px;
+  }
+
+  @include media(mobile) {
+
+    min-height: 164px;
+  }
+
+  .checkbox-long-text {
+
+    width: 90%;
+    float: right;
+
+
+    @include media(mobile) {
+
+      width: 80%;
+
+    }
+
+  }
+
+}
+
+.checkbox-container-has-error {
+
+  @include media(tablet) {
+
+    min-height: 180px;
+  }
+
+  @include media(desktop) {
+
+    min-height: 200px;
+  }
+
+  @include media(mobile) {
+
+    min-height: 290px;
+  }
+}
+
+// Radio Buttons
+
+.form-label--radio {
+
+    background-color: lighten( #E8EDEE, 5% );
+    border-radius: 2px;
+    padding: 0.9em;
+    display: inline-block;
+    margin: 8px 0;
+    border: 2px solid #E8EDEE;
+
+    &.checked {
+
+      background-color: white;
+      border: 2px solid darken($blue, 5%);
+
+    }
+
+    &:hover {
+
+      background-color: white;
+      border: 2px solid  $black;
+
+    }
+
+    &.full {
+
+      display: block;
+    }
+
+    &.lg {
+
+
+
+      @include media(desktop) {
+
+        min-width: 140px;
+      }
+
+    }
+
+    @include media(mobile) {
+
+      display: block;
+    }
+
+
+}
+
+[type="radio"]{
+
+  position: relative;
+  top: -3px;
+  margin-right: 8px;
+
+  &:focus + label:before {
+    box-shadow: 0 0 0 5px $yellow;
+  }
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    cursor: pointer;
+    // display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
