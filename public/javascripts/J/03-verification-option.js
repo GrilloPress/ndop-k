@@ -1,6 +1,6 @@
 //Please enter your personal details page ---------------------------------------------------------------------------------
 //JQuery ------------------------------------------------------------------------------------------------------------------
-var PROTOTYPE_URL = "/J";
+var PROTOTYPE_URL = "/K";
 
 //waits for the page to load
 $(window).load(function() {
