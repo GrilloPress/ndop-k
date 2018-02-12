@@ -2027,85 +2027,6 @@ p {
   .callout:focus {
     outline: 3px solid #ffb81c; }
 
-.callout--interruption {
-  -webkit-box-shadow: 0px 0px 14px 3px #ebebeb;
-  -moz-box-shadow: 0px 0px 14px 3px #ebebeb;
-  box-shadow: 0px 0px 14px 3px #ebebeb;
-  border: 1px solid #cbd6d8;
-  border-radius: 5px; }
-  .callout--interruption h1 {
-    font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 40px;
-    text-transform: none; }
-    @media (min-width: 641px) {
-      .callout--interruption h1 {
-        font-size: 32px;
-        line-height: 48px; } }
-    @media (min-width: 925px) {
-      .callout--interruption h1 {
-        font-size: 36px;
-        line-height: 48px; } }
-  .callout--interruption h2 {
-    font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 32px;
-    text-transform: none; }
-    @media (min-width: 641px) {
-      .callout--interruption h2 {
-        font-size: 24px;
-        line-height: 32px; } }
-    @media (min-width: 925px) {
-      .callout--interruption h2 {
-        font-size: 24px;
-        line-height: 32px; } }
-  .callout--interruption .column--number-counter {
-    width: 8%;
-    float: left; }
-  .callout--interruption .number-circle {
-    padding: 2px 12px;
-    background-color: #005eb8;
-    border-radius: 50%;
-    color: white;
-    margin-right: 16px;
-    display: inline-block;
-    text-align: center; }
-    @media (max-width: 640px) {
-      .callout--interruption .number-circle {
-        margin: 16px 0; } }
-  .callout--interruption .link-list li {
-    margin-bottom: 16px;
-    font-family: "Frutiger W01", Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-transform: none; }
-    @media (min-width: 641px) {
-      .callout--interruption .link-list li {
-        font-size: 20px;
-        line-height: 32px; } }
-    @media (min-width: 925px) {
-      .callout--interruption .link-list li {
-        font-size: 20px;
-        line-height: 32px; } }
-  .callout--interruption .link-list.no-margin {
-    margin: 0; }
-    .callout--interruption .link-list.no-margin li {
-      margin: 0; }
-  .callout--interruption .link-list.no-margin-li {
-    margin: 1em 0; }
-    .callout--interruption .link-list.no-margin-li li {
-      margin: 0; }
-  .callout--interruption.alt {
-    background-color: #004D97;
-    color: white; }
-    .callout--interruption.alt .number-circle {
-      color: #231f20;
-      background-color: white;
-      border: 1px solid; }
-
 .callout--muted {
   background-color: #d8dde0; }
 
@@ -3913,6 +3834,100 @@ input[type=range]:focus::-ms-fill-upper {
   .details-group .details__content {
     padding: 32px 16px;
     margin-top: 0; }
+
+.callout--interruption {
+  -webkit-box-shadow: 0px 0px 14px 3px #ebebeb;
+  -moz-box-shadow: 0px 0px 14px 3px #ebebeb;
+  box-shadow: 0px 0px 14px 3px #ebebeb;
+  border: 1px solid #cbd6d8;
+  border-radius: 5px; }
+  .callout--interruption h1 {
+    font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: none; }
+    @media (min-width: 641px) {
+      .callout--interruption h1 {
+        font-size: 32px;
+        line-height: 48px; } }
+    @media (min-width: 925px) {
+      .callout--interruption h1 {
+        font-size: 36px;
+        line-height: 48px; } }
+  .callout--interruption h2 {
+    font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: none; }
+    @media (min-width: 641px) {
+      .callout--interruption h2 {
+        font-size: 24px;
+        line-height: 32px; } }
+    @media (min-width: 925px) {
+      .callout--interruption h2 {
+        font-size: 24px;
+        line-height: 32px; } }
+  .callout--interruption .column--number-counter {
+    width: 8%;
+    float: left; }
+  .callout--interruption .number-circle {
+    padding: 2px 12px;
+    background-color: #005eb8;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+    display: inline-block;
+    text-align: center; }
+    @media (max-width: 640px) {
+      .callout--interruption .number-circle {
+        margin: 16px 0; } }
+  .callout--interruption .link-list li {
+    margin-bottom: 16px;
+    font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: none; }
+    @media (min-width: 641px) {
+      .callout--interruption .link-list li {
+        font-size: 20px;
+        line-height: 32px; } }
+    @media (min-width: 925px) {
+      .callout--interruption .link-list li {
+        font-size: 20px;
+        line-height: 32px; } }
+  .callout--interruption .link-list.no-margin {
+    margin: 0; }
+    .callout--interruption .link-list.no-margin li {
+      margin: 0; }
+  .callout--interruption .link-list.no-margin-li {
+    margin: 1em 0; }
+    .callout--interruption .link-list.no-margin-li li {
+      margin: 0; }
+  .callout--interruption.alt {
+    background-color: #004D97;
+    color: white; }
+    .callout--interruption.alt .number-circle {
+      color: #231f20;
+      background-color: white;
+      border: 1px solid; }
+  .callout--interruption .int-card .int-card--img {
+    text-align: center;
+    position: relative;
+    padding: 0 2em; }
+    .callout--interruption .int-card .int-card--img .number-circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 8px 13px; }
+    .callout--interruption .int-card .int-card--img img {
+      margin: auto;
+      padding: 2em;
+      width: 100%; }
+  .callout--interruption .int-card .int-card--body {
+    margin: 0; }
 
 .local-header__subtitle {
   color: white;
