@@ -2099,7 +2099,7 @@ p {
     .callout--interruption .link-list.no-margin-li li {
       margin: 0; }
   .callout--interruption.alt {
-    background-color: #003087;
+    background-color: #004D97;
     color: white; }
     .callout--interruption.alt .number-circle {
       color: #231f20;
@@ -3672,6 +3672,9 @@ input[type=range]:focus::-ms-fill-upper {
       padding: 1px 5px;
       color: #f9b905;
       background-color: #000; }
+    .banner.alpha a:hover {
+      color: #f9b905;
+      background-color: #000; }
   .banner.beta {
     background-color: #ebf5ff; }
     .banner.beta span {
@@ -3679,13 +3682,13 @@ input[type=range]:focus::-ms-fill-upper {
       color: #231f20;
       background-color: white;
       border: 1px solid #005eb8; }
+    .banner.beta a:hover {
+      color: white;
+      background-color: #005eb8; }
   .banner a {
     color: black;
     text-decoration: underline;
     padding: 1px; }
-    .banner a:hover {
-      color: #f9b905;
-      background-color: #000; }
   .banner .page-section {
     padding: 8px 0; }
 

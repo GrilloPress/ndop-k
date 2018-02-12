@@ -17,6 +17,16 @@
 
     }
 
+    a {
+
+      &:hover {
+
+        color: #f9b905;
+        background-color: #000;
+
+      }
+    }
+
   }
 
   &.beta {
@@ -32,6 +42,16 @@
 
     }
 
+    a {
+
+      &:hover {
+
+        color: white;
+        background-color: $blue;
+
+      }
+    }
+
   }
 
   a {
@@ -40,12 +60,6 @@
     text-decoration: underline;
     padding: 1px;
 
-    &:hover {
-
-      color: #f9b905;
-      background-color: #000;
-
-    }
   }
 
   .page-section {
