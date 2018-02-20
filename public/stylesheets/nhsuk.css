@@ -3433,4 +3433,10 @@ input[type=range]:focus::-ms-fill-upper {
   .callout--interruption .int-card .int-card--body {
     margin: 0; }
 
+.link--new-tab {
+  text-decoration: none;
+  color: #231f20; }
+  .link--new-tab span.underline {
+    text-decoration: underline; }
+
 /*# sourceMappingURL=nhsuk.css.map */
