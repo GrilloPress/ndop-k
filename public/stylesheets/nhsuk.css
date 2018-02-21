@@ -3046,33 +3046,27 @@ input[type=range]:focus::-ms-fill-upper {
     color: #005eb8;
     width: 130px;
     margin-top: 32px; }
-
-.stepper {
-  font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  text-transform: none;
-  padding: 32px 0 8px 0; }
-  @media (min-width: 641px) {
-    .stepper {
-      font-size: 42px;
-      line-height: 48px; } }
-  @media (min-width: 925px) {
-    .stepper {
-      font-size: 42px;
-      line-height: 48px; } }
-  .stepper small {
-    display: block;
-    font-size: 60%;
-    margin-top: 16px; }
-  .stepper::after {
-    content: " ";
-    display: block;
-    border-bottom: 4px solid;
-    color: #005eb8;
-    width: 130px;
-    margin-top: 8px; }
+  .page-title.stepper {
+    font-family: "Frutiger W01", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: none;
+    padding: 32px 0 8px 0; }
+    @media (min-width: 641px) {
+      .page-title.stepper {
+        font-size: 42px;
+        line-height: 48px; } }
+    @media (min-width: 925px) {
+      .page-title.stepper {
+        font-size: 42px;
+        line-height: 48px; } }
+    .page-title.stepper small {
+      display: block;
+      font-size: 60%;
+      margin-top: 16px; }
+    .page-title.stepper::after {
+      margin-top: 8px; }
 
 .banner {
   color: #000;
