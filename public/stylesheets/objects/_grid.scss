@@ -117,6 +117,16 @@
 
 .column--one-sixth {
   @include grid-column(1 / 6);
+
+  &.tablet {
+
+    @include grid-column(1 / 6, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(1 / 6, mobile);
+  }
 }
 
 
@@ -127,6 +137,16 @@
 
 .column--five-sixes {
   @include grid-column(5 / 6);
+
+  &.tablet {
+
+    @include grid-column(5 / 6, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(5 / 6, mobile);
+  }
 }
 
 

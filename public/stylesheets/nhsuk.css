@@ -664,6 +664,20 @@ body {
     .column--one-sixth, .step .column--step-counter, .step .column--step-icon, .step-card-container .step .column--card-step-counter {
       float: left;
       width: 16.66667%; } }
+  .column--one-sixth.tablet, .step .tablet.column--step-counter, .step .tablet.column--step-icon, .step-card-container .step .tablet.column--card-step-counter {
+    display: block;
+    padding: 0 16px; }
+    @media (min-width: 641px) {
+      .column--one-sixth.tablet, .step .tablet.column--step-counter, .step .tablet.column--step-icon, .step-card-container .step .tablet.column--card-step-counter {
+        float: left;
+        width: 16.66667%; } }
+  .column--one-sixth.mobile, .step .mobile.column--step-counter, .step .mobile.column--step-icon, .step-card-container .step .mobile.column--card-step-counter {
+    display: block;
+    padding: 0 16px; }
+    @media (max-width: 640px) {
+      .column--one-sixth.mobile, .step .mobile.column--step-counter, .step .mobile.column--step-icon, .step-card-container .step .mobile.column--card-step-counter {
+        float: left;
+        width: 16.66667%; } }
 
 .column--four-sixes, .step .column--step-body-with-icon {
   display: block;
@@ -680,6 +694,20 @@ body {
     .column--five-sixes, .step .column--step-body {
       float: left;
       width: 83.33333%; } }
+  .column--five-sixes.tablet, .step .tablet.column--step-body {
+    display: block;
+    padding: 0 16px; }
+    @media (min-width: 641px) {
+      .column--five-sixes.tablet, .step .tablet.column--step-body {
+        float: left;
+        width: 83.33333%; } }
+  .column--five-sixes.mobile, .step .mobile.column--step-body {
+    display: block;
+    padding: 0 16px; }
+    @media (max-width: 640px) {
+      .column--five-sixes.mobile, .step .mobile.column--step-body {
+        float: left;
+        width: 83.33333%; } }
 
 .column--one-seventh {
   display: block;
