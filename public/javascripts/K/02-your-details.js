@@ -29,6 +29,8 @@ function matchDetails() {
 			window.location.href = PROTOTYPE_URL + '/app/02X-verification-fail';
 		} else if ((formComplete == true) && (firstName == 'satan')) {
 			window.location.href = PROTOTYPE_URL + '/app/02X-contact-us';
+		} else if ((formComplete == true) && (firstName == 'young')) {
+			window.location.href = PROTOTYPE_URL + '/app/02X-age-restriction';
 		} else if (formComplete == true) {
 			window.location.href= PROTOTYPE_URL + "/app/03-verification-option"
 		}
