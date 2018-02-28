@@ -19,7 +19,6 @@
     vertical-align: middle;
     width: 34px;
     height: 34px;
-    background: white;
     border: 3px solid $blue;
   }
 
@@ -136,7 +135,9 @@
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
-    left: -9999px;
+    height: 2px;
+    width: 2px;
+    opacity: 0; 
 }
 [type="radio"]:checked + label,
 [type="radio"]:not(:checked) + label
