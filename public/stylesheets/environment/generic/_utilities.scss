@@ -4,6 +4,10 @@
   @include visuallyhidden;
 }
 
+.util-displaynone {
+  display: none;
+}
+
 .util-nofocus:focus {
   outline: none;
 }
