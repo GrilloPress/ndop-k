@@ -449,6 +449,9 @@ body {
   position: absolute;
   width: 1px; }
 
+.util-displaynone {
+  display: none; }
+
 .util-nofocus:focus {
   outline: none; }
 
@@ -1964,7 +1967,6 @@ table {
       color: #231f20; }
 
 .article-pagination {
-  padding-top: 8px;
   border-top: 1px solid #ccdff1;
   list-style: none;
   padding-left: 0; }
