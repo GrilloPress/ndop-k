@@ -49,7 +49,8 @@ function submitCode() {
     $('html,body').animate({scrollTop: $('#error-summary').offset().top -100});
     $('.form-row').addClass("form-row-error-active has-error");
 		$('#code-input-error').addClass( 'error-message-active' );
-    return false;
+    $( ".alert" ).hide();
+    // return false;
 
   } else if ( code == '666' ) {
     window.location.href = PROTOTYPE_URL + "/app/04X-incorrect-code";
