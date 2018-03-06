@@ -1984,7 +1984,7 @@ table {
   text-decoration: none;
   padding: 16px 4px; }
   .article-pagination__item a:hover {
-    background-color: #f4f6f7; }
+    background-color: #f0f4f5; }
 
 @media (min-width: 641px) {
   .article-pagination__item--left {
