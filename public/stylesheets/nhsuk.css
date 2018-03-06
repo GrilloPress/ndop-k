@@ -2146,9 +2146,7 @@ p {
   background-color: #d8dde0; }
 
 .callout--info {
-  background-color: #f0f4f5;
-  border: solid #768692;
-  border-width: 0 0 0 4px; }
+  background-color: #f0f4f5; }
 
 .callout--attention {
   border: 8px solid #0072ce; }
