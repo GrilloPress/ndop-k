@@ -1975,16 +1975,16 @@ table {
     content: "";
     display: table; }
 
-.article-pagination__item {
+@media (min-width: 641px) {
+  .article-pagination__item + .article-pagination__item {
+    margin-top: 0; } }
+
+.article-pagination__item a {
+  display: block;
+  text-decoration: none;
   padding: 16px 4px; }
-  .article-pagination__item:hover {
+  .article-pagination__item a:hover {
     background-color: #f4f6f7; }
-  @media (min-width: 641px) {
-    .article-pagination__item + .article-pagination__item {
-      margin-top: 0; } }
-  .article-pagination__item a {
-    display: block;
-    text-decoration: none; }
 
 @media (min-width: 641px) {
   .article-pagination__item--left {
