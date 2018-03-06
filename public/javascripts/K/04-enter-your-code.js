@@ -52,7 +52,7 @@ function submitCode() {
     return false;
 
   } else if ( code == '666' ) {
-    console.log( "DEVIL" );
+    window.location.href = PROTOTYPE_URL + "/app/04X-incorrect-code";
     // if 666 handle as error?
 
   } else {
