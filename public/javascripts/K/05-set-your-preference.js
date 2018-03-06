@@ -1,7 +1,7 @@
 var PROTOTYPE_URL = "/K";
 
 $(window).load( function() {
-  
+
   $( '#single-question' ).change( function() {
 
     $( 'input[name="single-pref"]:checked' ).each( function () {
@@ -22,14 +22,14 @@ $(window).load( function() {
 $(window).ready(function() {
 
   if ( sessionStorage.singlePref == "true" ) {
-    $(" #preference ").text( "use");
+    $(" #preference ").text( "allow");
     $( "#single-opted-in" ).prop( "checked", true ).parent().addClass( "checked" );
     $( ".alert" ).fadeIn( 1000, function() {
     // Animation complete
     });
   } else if ( sessionStorage.singlePref == "false" ) {
 
-    $(" #preference ").text( "not use");
+    $(" #preference ").text( "do not allow");
     $( "#single-opted-out" ).prop( "checked", true ).parent().addClass( "checked" );
     $( ".alert" ).fadeIn( 1000, function() {
     // Animation complete
