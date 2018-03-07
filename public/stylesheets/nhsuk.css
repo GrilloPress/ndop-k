@@ -2462,8 +2462,7 @@ p {
   width: 34px;
   height: 34px;
   border: 3px solid #005eb8;
-  border-radius: 100%;
-  background: #fff; }
+  border-radius: 100%; }
 
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
