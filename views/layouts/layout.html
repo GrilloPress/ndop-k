@@ -12,6 +12,14 @@
     </div>
   </div>
 
+  {% if COOKIE_TRUE %}
+  <div class="banner cookie">
+    <div class="page-section">
+      We use cookies to make this service simpler. <a href="/{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}/00-cookie-policy">Find out more about cookies</a>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="banner beta">
     <div class="page-section">
       <span>BETA</span> This is a new service - your feedback will help this service.

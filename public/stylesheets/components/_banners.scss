@@ -3,11 +3,12 @@
   color: #000;
   @include core-font(16);
   font-weight: 400;
-  border-bottom: 2px dashed;
+  $default-border-bottom: 2px dashed;
 
   &.alpha {
 
     background-color: #f9b905;
+    border-bottom: $default-border-bottom;
 
     span {
 
@@ -32,6 +33,33 @@
   &.beta {
 
     background-color: lighten( $blue, 60%);
+    border-bottom: $default-border-bottom;
+
+    span {
+
+      padding: 1px 5px;
+      color: $black;
+      background-color: white;
+      border: 1px solid $blue;
+
+    }
+
+    a {
+
+      &:hover {
+
+        color: white;
+        background-color: $blue;
+
+      }
+    }
+
+  }
+
+  &.cookie {
+
+    background-color: lighten( $yellow, 25%);
+    border-bottom: none;
 
     span {
 

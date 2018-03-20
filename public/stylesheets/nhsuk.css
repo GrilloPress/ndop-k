@@ -3103,8 +3103,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
-  font-weight: 400;
-  border-bottom: 2px dashed; }
+  font-weight: 400; }
   @media (min-width: 641px) {
     .banner {
       font-size: 16px;
@@ -3114,7 +3113,8 @@ input[type=range]:focus::-ms-fill-upper {
       font-size: 16px;
       line-height: 24px; } }
   .banner.alpha {
-    background-color: #f9b905; }
+    background-color: #f9b905;
+    border-bottom: 2px dashed; }
     .banner.alpha span {
       padding: 1px 5px;
       color: #f9b905;
@@ -3123,13 +3123,25 @@ input[type=range]:focus::-ms-fill-upper {
       color: #f9b905;
       background-color: #000; }
   .banner.beta {
-    background-color: #ebf5ff; }
+    background-color: #ebf5ff;
+    border-bottom: 2px dashed; }
     .banner.beta span {
       padding: 1px 5px;
       color: #231f20;
       background-color: white;
       border: 1px solid #005eb8; }
     .banner.beta a:hover {
+      color: white;
+      background-color: #005eb8; }
+  .banner.cookie {
+    background-color: #ffe09c;
+    border-bottom: none; }
+    .banner.cookie span {
+      padding: 1px 5px;
+      color: #231f20;
+      background-color: white;
+      border: 1px solid #005eb8; }
+    .banner.cookie a:hover {
       color: white;
       background-color: #005eb8; }
   .banner a {
