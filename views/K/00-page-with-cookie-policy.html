@@ -1,11 +1,10 @@
-{% set title = 'Cookie policy - Register your preference for sharing health data' %}
-{% set content_title = "Cookie policy" %}
+{% set title = 'Cookie Example Overview - Register your preference for sharing health data' %}
+{% set content_title = "Overview" %}
 {% set PROTOTYPE_URL = 'K' %}
-{% set COOKIE_TRUE = "TRUE" %}
+{% set COOKIE_TRUE = 'true' %}
 {% block scripts %}
 {% endblock %}
 {% extends 'layouts/layout.html' %}
-
 {% block body %}
 <main id="content" role="main">
   <div class="page-band">
@@ -15,79 +14,95 @@
   </div>
 
   <div class="page-section">
-      <div class="reading-width">
-        <h1 class="page-title">{{content_title}}</h1>
+    <h1 class="page-title">{{content_title}}</h1>
+
+    <div class="grid-row">
+      <div class="column--one-third">
+        <ol>
+          <li>{{content_title}}</li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-protected">How data is protected</a>
+          </li>
+        </ol>
+      </div>
+      <div class="column--one-third">
+        <ol start="4">
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-register-your-preference">Register your preference</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            Whenever you visit a health and care service, care professionals must keep records about you. These records contain identifiable health and care information, like your name or NHS number.
+          </p>
+          <h2 class="h3" id="using-your-data">Using your data</h2>
+          <p>
+            The NHS may use your identifiable health and care information in two different ways.
+          </p>
+
+          <h3 id="your-individual-care" class="h4">Your individual care</h3>
           <div class="grid-row">
+            <div class="column--one-third">
+              <img alt="" class="data-usage-icon" src="/images/individual_care_icon.svg" height="150" width="auto" />
+            </div>
             <div class="column--two-thirds">
-              <p>The 'Register Your Choice for Using Patient Health Information' service puts small files (known as ‘cookies’) onto your computer to collect information about how you browse the site.</p>
-              <p>Cookies are used to:</p>
-              <ul>
-                <li>measure how you use the website so it can be updated and improved based on your needs</li>
-              </ul>
-              <p>You'll normally see a message on the site before we store a cookie on your computer.</p>
-              <p>Find out more about <a target="_blank" href="https://www.aboutcookies.org/">how to manage cookies<span class='util-visuallyhidden'> - Page opens in new window</span></a> <span aria-hidden="true"> (opens in new window)</span>.</p>
-              <h2 id="how-cookies-are-used">How cookies are used</h2>
-              <h3>Measuring website usage (Google Analytics)</h3>
-              <p>We use Google Analytics and Hotjar to collect information about how you use our service. We do this to help make sure the site is meeting the needs of its users and to help us make improvements, for example improving site search.</p>
-              <p>Google Analytics stores information about:</p>
-              <ul>
-                <li>the pages you visit</li>
-                <li>how long you spend on each page</li>
-                <li>how you got to the site</li>
-                <li>what you click on while you’re visiting the site</li>
-              </ul>
-              <p>We don't collect or store your personal information (for example your name or address) so this information can't be used to identify who you are.</p>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Purpose</th>
-                    <th>Expires</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>_ga</td>
-                    <td>This helps us count how many people visit NHS.UK by tracking if you've visited before</td>
-                    <td>2 years</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p>You can <a target="_blank" href="https://tools.google.com/dlpage/gaoptout">opt out of Google Analytics cookies<span class='util-visuallyhidden'> - Page opens in new window</span></a> <span aria-hidden="true"> (opens in new window)</span>.</p>
-              <h3>Hotjar sets the following cookies:</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Purpose</th>
-                    <th>Expires</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>_hjUserId</td>
-                    <td>This cookie is set as soon as a user loads a page which contains the Hotjar code. The cookie contains a universally unique identifier (UUID) which allows Hotjar to track the same visitor across multiple pages and sessions</td>
-                    <td>365 days</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p>You can <a href="https://www.hotjar.com/opt-out">opt out of Hotjar cookies<span class='util-visuallyhidden'> - Page opens in new window</span></a> <span aria-hidden="true"> (opens in new window)</span>.</p>
-
+              <p>Health and care professionals access your identifiable health and care information when providing you with treatment or care.</p>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="page-section">
-        <div class="reading-width">
+          <h3 id="research-and-planning" class="h4">Research and planning</h3>
           <div class="grid-row">
-            <div class="column--three-quarters">
-              {{ patterns.page_nav( "Register your preference", "/" + PROTOTYPE_URL + "/01-overview" ) }}
+            <div class="column--one-third">
+              <img alt="" class="data-usage-icon" src="/images/research_icon.svg" height="150" width="auto" />
+            </div>
+            <div class="column--two-thirds">
+              <p>Your identifiable health and care information is also used to:</p>
+              <ul>
+                <li>plan essential facilities like heart units</li>
+                <li>improve the health of future generations</li>
+                <li>research potential cures for life-threatening diseases</li>
+                <li>develop treatment for serious illnesses</li>
+              </ul>
             </div>
           </div>
+          <h2 class="h3" id="where-you-have-a-choice">Where you have a choice</h2>
+          <p>If you don't agree with health and care professionals using your identifiable health and care information for research and planning, you can opt out of this. The decision you make will not affect your individual care.</p>
+          <h2 class="h3" id="setting-a-preference">Setting your preference</h2>
+          <p>
+            You may use our online service, or request a print-and-post form, to set or change your preference at any time. You can also set a preference or request assistance using our telephone service. If you do not wish to opt out, you don’t have to do anything at all.
+          </p>
+          <p>
+            You may also set a preference on behalf of another individual by proxy. For example, a parent may want to set a preference on behalf of a child under the age of 13.
+          </p>
+          <p>
+            <a title="Register your preference" href="/{{PROTOTYPE_URL}}/05-register-your-preference" aria-label="Register your preference">Register a preference</a> or continue reading for more information.
+          </p>
         </div>
       </div>
+    </div>
+  </div>
 
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          {{ patterns.page_nav( "", "", "Who uses your data", "/" + PROTOTYPE_URL + "/02-who-uses-your-data" ) }}
+        </div>
+      </div>
+    </div>
   </div>
 
 </main>
