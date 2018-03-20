@@ -3136,14 +3136,9 @@ input[type=range]:focus::-ms-fill-upper {
   .banner.cookie {
     background-color: #ffe09c;
     border-bottom: none; }
-    .banner.cookie span {
-      padding: 1px 5px;
-      color: #231f20;
-      background-color: white;
-      border: 1px solid #005eb8; }
     .banner.cookie a:hover {
-      color: white;
-      background-color: #005eb8; }
+      color: #ffe09c;
+      background-color: black; }
   .banner a {
     color: black;
     text-decoration: underline;
